@@ -1,0 +1,53 @@
+.badge {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,
+            #f7e28b 0%,
+            #d4af37 35%,
+            #b8962e 65%,
+            #f5e6a1 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    z-index: 10;
+}
+
+.innerRing {
+    width: 92%;
+    height: 92%;
+    border-radius: 50%;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+    color: #000;
+    font-family: "Inter", sans-serif;
+    line-height: 1;
+}
+
+.number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    /* -webkit-text-fill-color: transparent; */
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.textSmall {
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.textLarge {
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
