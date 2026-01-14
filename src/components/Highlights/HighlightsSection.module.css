@@ -1,0 +1,132 @@
+.section {
+    background-color: #0f1113;
+    color: #ffffff;
+    padding: 100px 5%;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.badge {
+    color: #c5a059;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+}
+
+.accent {
+    color: #c5a059;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #1a1d20;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(197, 160, 89, 0.3);
+}
+
+.imageWrapper {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .image {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.stat {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #c5a059;
+}
+
+.content {
+    padding: 30px;
+}
+
+.content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f0f0f0;
+}
+
+.content p {
+    color: #a0a0a0;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.textLink {
+    background: none;
+    border: none;
+    color: #c5a059;
+    font-weight: 600;
+    padding: 0;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.textLink:hover {
+    color: #e2be7d;
+    text-decoration: underline;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+}
