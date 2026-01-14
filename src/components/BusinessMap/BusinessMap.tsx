@@ -1,13 +1,8 @@
-import React from 'react';
 import styles from './BusinessMap.module.css';
 
 export default function BusinessMap() {
-    // Your specific address URL-encoded for the Google Map source
     const address = "3190+HW-160,+Suite+F,+Pahrump,+Nevada+89048";
     const mapSrc = `https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY_HERE&q=${address}`;
-
-    // NOTE: If you don't have an API key yet, you can use the "Share > Embed" 
-    // iframe code directly from Google Maps (see explanation below).
 
     return (
         <section className={styles.mapSection}>

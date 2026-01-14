@@ -1,8 +1,12 @@
 import styles from './Footer.module.css';
-import Logo1 from '../../assets/images/logoImg1.webp';
+import Logo1 from "../../assets/images/logoImg1.webp"
 import Logo2 from '../../assets/images/logoImg2.webp';
 import Logo3 from '../../assets/images/logoImg3.webp';
 import Logo4 from '../../assets/images/logoImg4.webp';
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -10,7 +14,7 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <div className={styles.logoBar}>
-                <div className={styles.container}>
+                <div className={styles.logoContainer}>
                     <div className={styles.logoGrid}>
                         <img src={Logo1} alt="Affiliation 1" />
                         <img src={Logo2} alt="Affiliation 2" />
@@ -20,7 +24,6 @@ export default function Footer() {
                 </div>
             </div>
 
-            {/* 2. Main Footer Content */}
             <div className={styles.mainFooter}>
                 <div className={styles.container}>
                     <div className={styles.contentGrid}>
@@ -33,11 +36,11 @@ export default function Footer() {
                         <div className={styles.socialColumn}>
                             <h4>Connect With Us</h4>
                             <div className={styles.socialIcons}>
-                                {/* Replace # with your actual links */}
-                                <a href="#" className={styles.iconCircle}>FB</a>
-                                <a href="#" className={styles.iconCircle}>IG</a>
-                                <a href="#" className={styles.iconCircle}>LN</a>
-                                <a href="#" className={styles.iconCircle}>YT</a>
+                                {/* <a href="#" className={styles.iconCircle}>FB</a> */}
+                                <FaFacebook className={styles.iconCircle} />
+                                <FaInstagram className={styles.iconCircle} />
+                                <FaLinkedin className={styles.iconCircle} />
+                                <FaXTwitter className={styles.iconCircle} />
                             </div>
                         </div>
 

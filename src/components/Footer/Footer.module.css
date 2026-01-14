@@ -11,7 +11,8 @@
 
 .logoBar {
     padding: 50px 0;
-    background-color: #111214;
+    /* background-color: #111214; */
+    background-color: #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -24,12 +25,9 @@
 }
 
 .logoGrid img {
-    max-height: 45px;
+    max-height: 55px;
     width: auto;
-    opacity: 0.5;
-    filter: brightness(0) invert(1);
-    /* Forces logos to be white */
-    transition: opacity 0.3s ease;
+    cursor: pointer;
 }
 
 .logoGrid img:hover {
