@@ -1,0 +1,144 @@
+.section {
+    padding: 80px 5%;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+/* Form Styles */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input:focus {
+    border-bottom-color: #c5a059;
+}
+
+.sendBtn {
+    margin-top: 10px;
+    background-color: #1a3a32;
+    color: white;
+    padding: 12px 40px;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.captchaText {
+    font-size: 0.7rem;
+    color: #999;
+    line-height: 1.4;
+    margin-top: 15px;
+}
+
+/* WhatsApp Link */
+.whatsappBox {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.whatsappLink {
+    color: #25d366;
+    /* WhatsApp Green */
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Info Side Styles */
+.brandName {
+    font-size: 1.4rem;
+    margin: 0;
+    color: #1a1a1a;
+}
+
+.groupName {
+    color: #c5a059;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.address {
+    font-style: normal;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.phone {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a3a32;
+    text-decoration: none;
+}
+
+/* Hours Styling */
+.hoursBlock {
+    margin-top: 40px;
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.hoursBlock h4 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: #888;
+}
+
+.today span {
+    font-weight: 700;
+    color: #1a3a32;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}

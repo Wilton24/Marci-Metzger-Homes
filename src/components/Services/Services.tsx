@@ -1,6 +1,6 @@
-import styles from './ServiceOverview.module.css';
+import styles from './Services.module.css';
 
-export default function ServicesSection() {
+export default function Services() {
   return (
     <section className={styles.outerWrapper}>
       {/* SECTION 1: HERO STYLE */}
