@@ -1,4 +1,4 @@
-import HeroImg from "../../assets/images/heroImg.jpg";
+import HeroImg from "../../assets/images/coolestHome.jpg";
 import styles from "./header.module.css";
 import logoImg from "../../../public/MarciMetzgerLogo.webp"
 
@@ -29,8 +29,9 @@ export default function Header() {
                 </header>
 
                 <div className={styles.heroContent}>
-                    <h1>Find where you belong.</h1>
-                    {/* My searchbar probably */}
+                    <h2>MARCI METZGER - THE RIDGE REALTY GROUP</h2>
+                    <h1>Pahrump Realtor</h1>
+                    <button className={styles.callNowBtn}>CALL NOW</button>
                 </div>
             </section>
         </main>
