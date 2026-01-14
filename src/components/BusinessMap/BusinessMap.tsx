@@ -1,8 +1,8 @@
 import styles from './BusinessMap.module.css';
 
 export default function BusinessMap() {
-    const address = "3190+HW-160,+Suite+F,+Pahrump,+Nevada+89048";
-    const mapSrc = `https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY_HERE&q=${address}`;
+    // const address = "3190+HW-160,+Suite+F,+Pahrump,+Nevada+89048";
+    // const mapSrc = `https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY_HERE&q=${address}`;
 
     return (
         <section className={styles.mapSection}>
