@@ -6,6 +6,8 @@ import SearchListings from './components/SearchListings/SearchListings';
 import PhotoGallery from './components/PhotoGallery/PhotoGallery';
 import Services from './components/Services/Services';
 import ContactInfo from './components/ContactInfo/ContactInfo';
+import BusinessMap from './components/BusinessMap/BusinessMap';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
       <PhotoGallery />
       <Services />
       <ContactInfo />
+      <BusinessMap />
+      <Footer />
     </>
   )
 }

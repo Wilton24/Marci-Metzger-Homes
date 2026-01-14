@@ -1,0 +1,139 @@
+.footer {
+    background-color: #0a0b0c;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logoBar {
+    padding: 50px 0;
+    background-color: #111214;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logoGrid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.logoGrid img {
+    max-height: 45px;
+    width: auto;
+    opacity: 0.5;
+    filter: brightness(0) invert(1);
+    /* Forces logos to be white */
+    transition: opacity 0.3s ease;
+}
+
+.logoGrid img:hover {
+    opacity: 1;
+}
+
+/* Main Footer Section */
+.mainFooter {
+    padding: 80px 0;
+}
+
+.contentGrid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.brandColumn {
+    max-width: 450px;
+}
+
+.footerLogo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footerLogo span {
+    font-weight: 300;
+    color: #c5a059;
+    /* Gold accent */
+    margin-left: 10px;
+}
+
+.brandColumn p {
+    color: #a0a0a0;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Social Media Section */
+.socialColumn h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    color: #c5a059;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 15px;
+}
+
+.iconCircle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.iconCircle:hover {
+    background-color: #c5a059;
+    border-color: #c5a059;
+    color: #000;
+    transform: translateY(-5px);
+}
+
+/* Bottom Bar */
+.bottomBar {
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.bottomBar p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #666;
+    letter-spacing: 0.5px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .contentGrid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brandColumn {
+        margin: 0 auto;
+    }
+
+    .socialColumn {
+        margin: 0 auto;
+    }
+}
