@@ -4,6 +4,7 @@ import BodySection from './components/BodySection';
 import HighlightsSection from './components/Highlights/HighlightsSection';
 import SearchListings from './components/SearchListings/SearchListings';
 import PhotoGallery from './components/PhotoGallery/PhotoGallery';
+import ServicesSection from './components/Services/ServicesSection';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <HighlightsSection />
       <SearchListings />
       <PhotoGallery />
+      <ServicesSection />
     </>
   )
 }

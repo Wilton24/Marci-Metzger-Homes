@@ -49,13 +49,11 @@ export default function PhotoCarousel() {
                         &#10095;
                     </button>
 
-                    {/* Image Counter Badge */}
                     <div className={styles.counter}>
                         {currentIndex + 1} / {images.length}
                     </div>
                 </div>
 
-                {/* Thumbnail Navigation */}
                 <div className={styles.thumbnailBar}>
                     {images.map((src, index) => (
                         <div

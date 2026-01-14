@@ -1,0 +1,112 @@
+.outerWrapper {
+    background-color: #f8f8f8;
+}
+
+.fullPanel {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    /* Takes up 90% of the screen height per section */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.imageContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    /* Occupies more than half the width */
+    height: 100%;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(20%);
+    transition: transform 1.5s ease;
+}
+
+.fullPanel:hover .imageContainer img {
+    transform: scale(1.05);
+}
+
+.contentOverlay {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.leftAlign {
+    justify-content: flex-end;
+    /* Pushes text to the right when image is left */
+}
+
+.leftAlign~.imageContainer {
+    left: 0;
+    right: auto;
+}
+
+.textContainer {
+    max-width: 600px;
+    background: white;
+    padding: 60px;
+    box-shadow: 20px 20px 0px #c5a059;
+    /* Bold gold block shadow */
+}
+
+.label {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 5px;
+    font-size: 0.75rem;
+    color: #c5a059;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.giantTitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    /* Massive size */
+    line-height: 1.1;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+}
+
+.description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Responsive for tablets and phones */
+@media (max-width: 1024px) {
+    .fullPanel {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .imageContainer {
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+
+    .textContainer {
+        max-width: 100%;
+        padding: 40px 20px;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    .giantTitle {
+        font-size: 2.5rem;
+    }
+}
