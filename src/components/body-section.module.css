@@ -5,8 +5,7 @@
     min-height: 500px;
 }
 
-
-
+/* Left section styles */
 .leftSection {
     flex: 1;
     display: flex;
@@ -16,8 +15,8 @@
 
 .imageWrapper {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
     background-color: rgb(0, 38, 0);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -27,9 +26,9 @@
 
 .realtorImage {
     position: absolute;
-    top: -30px;
+    top: -20px;
     width: 85%;
-    height: 95%;
+    height: 100%;
     /* object-fit: cover; */
 }
 
@@ -37,4 +36,135 @@
     margin-top: 20px;
     width: 150px;
     height: auto;
+}
+
+.excellenceBadgeContainer {
+    z-index: 20;
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+}
+
+/* Right section styles */
+
+.rightSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 4rem 5rem;
+    color: #1f2f2b;
+    /* dark forest green */
+}
+
+.trustedLocalExpert {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    /* color: #8fa79f; */
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+}
+
+.realtorName {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+    color: #0f2b23;
+}
+
+.description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 520px;
+    color: #425b55;
+}
+
+.contactDetails {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #2c423d;
+    border-left: 3px solid #1f2f2b;
+    padding-left: 1rem;
+}
+
+.directLine {
+    font-size: 1.2rem;
+    color: #0f2b23;
+}
+
+.contactNumber {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1f2f2b;
+    line-height: 0.3;
+}
+
+/* CTA button */
+.bookConsultationButton {
+    background: linear-gradient(135deg, #d4af37, #f7e28b);
+    /* gold gradient */
+    color: #0f2b23;
+    /* dark text on gold */
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bookConsultationButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.bookConsultationButton:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.bookConsultationButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.5);
+    /* subtle gold focus ring */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .wrapper {
+        flex-direction: column;
+        padding: 2rem;
+        min-height: auto;
+    }
+
+    .leftSection,
+    .rightSection {
+        flex: none;
+        width: 100%;
+    }
+
+    .rightSection {
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    .imageWrapper {
+        width: 300px;
+        height: 300px;
+    }
 }
