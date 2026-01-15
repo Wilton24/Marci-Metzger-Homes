@@ -17,6 +17,7 @@
     flex-direction: column;
 }
 
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -24,9 +25,17 @@
     padding: 1.5rem 5%;
 }
 
+.logo {
+    padding: 8px 20px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .logo img {
     height: 50px;
-    /* Adjust logo size as needed */
     cursor: pointer;
 }
 
