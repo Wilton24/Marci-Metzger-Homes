@@ -23,12 +23,12 @@ export default function Section() {
             {/* Right section */}
             <div className={styles.rightSection}>
                 <h2 className={styles.trustedLocalExpert}>TRUSTED LOCAL EXPERT</h2>
-                <h1 className={styles.realtorName}>Marci Metzger</h1>
-                <p className={styles.description}>With over 30 years of experience, Marci Metzger has built a reputation for excellence in real estate. Her dedication
-                    to her clients and the community has made her a trusted name in the industry.</p>
+                <h1 className={styles.realtorName}>Wilton Gary Batiquin</h1>
+                <p className={styles.description}>With over 30 years of experience, Wilton Gary Batiquin has built a reputation for excellence in real estate. His dedication
+                    to his clients and the community has made him a trusted name in the industry.</p>
                 <div className={styles.contactDetails}>
                     <h2 className={styles.directLine}>DIRECT LINE</h2>
-                    <h1 className={styles.contactNumber}>206.919.6886</h1>
+                    <h1 className={styles.contactNumber}>+63929-430-7465</h1>
                 </div>
                 <button className={styles.bookConsultationButton}>Book a Consultation</button>
             </div>
