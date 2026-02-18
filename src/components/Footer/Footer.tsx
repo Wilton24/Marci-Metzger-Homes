@@ -29,7 +29,7 @@ export default function Footer() {
                     <div className={styles.contentGrid}>
 
                         <div className={styles.brandColumn}>
-                            <h3 className={styles.footerLogo}>MARCI METZGER<span>HOMES</span></h3>
+                            <h3 className={styles.footerLogo}>Sherlock<span>HOMES</span></h3>
                             <p>Providing exceptional real estate services with a focus on integrity, expertise, and community knowledge.</p>
                         </div>
 
@@ -51,7 +51,7 @@ export default function Footer() {
             {/* 3. Bottom Copyright Bar */}
             <div className={styles.bottomBar}>
                 <div className={styles.container}>
-                    <p>Copyright © {currentYear} Marci METZGER Homes - All Rights Reserved</p>
+                    <p>Copyright © {currentYear} Sherlock HOMES - All Rights Reserved</p>
                 </div>
             </div>
         </footer>
