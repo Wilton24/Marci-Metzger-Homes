@@ -33,13 +33,13 @@ export default function ContactInfo() {
                     <h2 className={styles.title}>Call or Visit</h2>
 
                     <div className={styles.infoBlock}>
-                        <h3 className={styles.brandName}>Marci Metzger</h3>
+                        <h3 className={styles.brandName}>Wilton Gary Batiquin</h3>
                         <p className={styles.groupName}>THE RIDGE REALTY GROUP</p>
                         <address className={styles.address}>
                             3190 HW-160, Suite F,<br />
                             Pahrump, Nevada 89048, United States
                         </address>
-                        <a href="tel:2069196886" className={styles.phone}>(206) 919-6886</a>
+                        <a href="tel:2069196886" className={styles.phone}>+63929-430-7465</a>
                     </div>
 
                     <div className={styles.hoursBlock}>
