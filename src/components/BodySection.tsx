@@ -1,5 +1,5 @@
 import styles from './body-section.module.css';
-import realtorImg from "../assets/realtor_Img.jfif";
+import realtorImg from "../assets/ID_NeckTie_Smile.png";
 import ExcellenceBadge from './UI/ExcellenceBadge';
 
 export default function Section() {
