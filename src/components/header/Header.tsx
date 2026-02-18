@@ -1,6 +1,6 @@
 import HeroImg from "../../assets/images/coolestHome.jpg";
 import styles from "./header.module.css";
-import logoImg from "../../../public/MarciMetzgerLogo.webp"
+import logoImg from "../../../public/SherlockHomes.png"
 
 export default function Header() {
     return (
