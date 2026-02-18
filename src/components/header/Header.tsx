@@ -11,7 +11,7 @@ export default function Header() {
             <header className={styles.header}>
                 <div className={styles.logo}>
                     {/* 🏠 */}
-                    <img src={logoImg} alt="Marci Metzger Homes Logo" />
+                    <img src={logoImg} alt="Sherlock HOMES Logo" />
                 </div>
                 <nav className={styles.nav}>
                     <ul className={styles.navList}>
@@ -28,7 +28,7 @@ export default function Header() {
             </header>
 
             <div className={styles.heroContent}>
-                <h2>MARCI METZGER - THE RIDGE REALTY GROUP</h2>
+                <h2>WILTON GARY BATIQUIN - THE RIDGE REALTY GROUP</h2>
                 <h1>Pahrump Realtor</h1>
                 <button className={styles.callNowBtn}>CALL NOW</button>
             </div>
